@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     var options = [
         {
             question: "What year is the Chinese Year of the Dog?", 
@@ -7,7 +8,7 @@ $(document).ready(function () {
             photo: "assets/images/newyear.jpg"
          },
          {
-             question: "What is a Greyhounds top speed?",
+            question: "What is a Greyhounds top speed?",
             choice: ["45mph", "35mph", "50mph", "60mph"],
             answer: 0,
             photo: "assets/images/Greyhound.jpg"
@@ -73,7 +74,7 @@ $(document).ready(function () {
         holder.push(options[i]);
     }
         })
-    //timer start
+    //timer start-check to make sure not running and set to running
     function runTimer(){
         if (!running) {
         intervalId = setInterval(decrement, 1000); 
@@ -102,7 +103,7 @@ $(document).ready(function () {
     //randomly pick question in array if not already shown
     //display question and loop though and display possible answers
     function displayQuestion() {
-        //generate random index in array
+      
         index = Math.floor(Math.random()*options.length);
         pick = options[index];
     
@@ -122,7 +123,7 @@ $(document).ready(function () {
         
     //click function to select answer and outcomes
     $(".answerchoice").on("click", function () {
-        //grab array position from userGuess
+        
         userGuess = parseInt($(this).attr("data-guessvalue"));
     
         //correct guess or wrong guess outcomes
