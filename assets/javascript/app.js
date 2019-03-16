@@ -49,19 +49,18 @@ $(document).ready(function () {
             photo: "assets/images/labrador-retriever.jpg"
         }];
     
-    var correctCount = 0;
-    var wrongCount = 0;
-    var unanswerCount = 0;
-    var timer = 20;
-    var intervalId;
-    var userGuess ="";
-    var running = false;
-    var qCount = options.length;
-    var pick;
-    var index;
-    var newArray = [];
-    var holder = [];
-    
+        var correctCount = 0;
+        var wrongCount = 0;
+        var unanswerCount = 0;
+        var timer = 20;
+        var intervalId;
+        var userGuess ="";
+        var running = false;
+        var qCount = options.length;
+        var pick;
+        var index;
+        var newArray = [];
+        var holder = [];      
     
     
     $("#reset").hide();
@@ -120,8 +119,7 @@ $(document).ready(function () {
     //		}
     }
     
-    
-    
+        
     //click function to select answer and outcomes
     $(".answerchoice").on("click", function () {
         //grab array position from userGuess
