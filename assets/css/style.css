@@ -1,71 +1,61 @@
-.answerchoice {
-	  border: 1px solid black;
-    border-radius: 5%;
-	  width: 40%;
-  	color: black;
-    text-align: center;
-    margin: 10px auto;
-    font-size: 20px;
-    background-color: white;
-
-}
-.wrapper {
-  margin: 10px auto;
-  background-color: rgba(255, 255, 255, 0.63);
-  border: 2px solid #403fd3;
-  height: 500px;
-  width: 60%;
-  text-align: center;
-}
-
-.btn {
-  position: relative;
-  bottom: -150px;
-}
-
-img {
-  max-height: 250px;
-  width: auto;
-}
-
-#answerdiv {
-  text-align: center;
-
-}
-
-#questiondiv {
-  text-align: center;
-  font-weight: bold;
-}
-
-#reset {
-  visibility: visible;
-}
-
 body {
-  background-image: url("../images/dogs.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Margarine', sans-serif;
+  max-width: 960px;
+  padding-left: 150px;
+  background-image: url("../images/Men_in_Tights.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+  font-family: "ZCOOL XiaoWei", serif;
 }
-
 h1 {
   text-align: center;
-  color: rgb(82, 9, 218);
+  color: whitesmoke;
   font-weight: bolder;
-  padding: 20px;
-  font-size: 45px;
+  font-size: 80px;
 }
 
+.answerchoice {
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 40%;
+  color: black;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: white;
+}
+#answerbox {
+  text-align: center;
+}
+
+#questionbox {
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+}
 p {
   margin: 10px;
   font-weight: bold;
-  color: red;
+  color: rgb(6, 13, 119);
   font-size: 20px;
 }
 
-h2, h4 {
+h2,
+h4,
+h3 {
   margin: 30px;
   font-weight: bold;
+  color: whitesmoke;
 }
-
+.btn {
+  position: center;
+}
+img {
+  max-height: 200px;
+  width: auto;
+}
+.wrapper {
+  float: center;
+  background-color: rgba(132, 209, 15, 0.814);
+  height: 450px;
+  width: 600px;
+}
